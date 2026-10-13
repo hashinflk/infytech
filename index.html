@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iNfytech | Studio HASH iNf Lk – Software Downloads</title>
+    <meta name="description"
+        content="iNfytech by Studio HASH iNf Lk – software downloads for developers and everyday users. Code. Build. Innovate. Together.">
+    <meta name="robots" content="index, follow">
+
+    <!-- =====================================================
+       MONETAG POPUNDER / VIGNETTE / PUSH SCRIPT PLACEHOLDER
+       Paste the script Monetag gives you (Dashboard > Ad Tags)
+       between the markers below, then remove the comment tags.
+       ===================================================== -->
+    <!-- MONETAG_POPUNDER_START -->
+    <!--
+  <script src="https://YOUR-MONETAG-DOMAIN/YOUR-ZONE-SCRIPT.js" data-zone="YOUR_ZONE_ID" async data-cfasync="false"></script>
+  -->
+    <!-- MONETAG_POPUNDER_END -->
+
+    <!-- Monetag site verification meta tag placeholder -->
+    <!-- <meta name="monetag" content="YOUR_VERIFICATION_CODE"> -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {ink: '#07061a', panel: '#0e0c2b', edge: '#26225a'},
+                    fontFamily: {sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']},
+                    boxShadow: {
+                        glow: '0 0 30px rgba(139,92,246,.35)',
+                        glowb: '0 0 30px rgba(59,130,246,.35)'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #07061a;
+        }
+
+        .bg-grid {
+            background-image:
+                radial-gradient(ellipse at 50% -10%, rgba(124, 58, 237, .35), transparent 60%),
+                radial-gradient(ellipse at 90% 30%, rgba(59, 130, 246, .18), transparent 50%),
+                linear-gradient(rgba(139, 92, 246, .07) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(139, 92, 246, .07) 1px, transparent 1px);
+            background-size: auto, auto, 44px 44px, 44px 44px;
+        }
+
+        .text-glow {
+            background: linear-gradient(90deg, #60a5fa, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card {
+            transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+        }
+
+        .ad-slot {
+            background: repeating-linear-gradient(45deg, rgba(139, 92, 246, .06), rgba(139, 92, 246, .06) 10px, transparent 10px, transparent 20px);
+        }
+
+        #toast {
+            transition: opacity .3s, transform .3s;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-slate-300 antialiased bg-ink">
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="sticky top-0 z-50 backdrop-blur bg-ink/80 border-b border-edge">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-3">
+                <!-- Inline SVG logo mark (# with circuit nodes) -->
+                <svg width="38" height="38" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                    <rect x="6" y="6" width="36" height="36" rx="9" stroke="#a78bfa" stroke-width="2.5"
+                        fill="#1a1450" />
+                    <path d="M19 13 L16 35 M30 13 L27 35 M12 20 H36 M11 29 H35" stroke="#fff" stroke-width="3"
+                        stroke-linecap="round" />
+                    <circle cx="4" cy="14" r="2" fill="#60a5fa" />
+                    <circle cx="44" cy="34" r="2" fill="#c084fc" />
+                </svg>
+                <span class="leading-tight">
+                    <span class="block font-extrabold text-white tracking-tight">i<span
+                            class="text-glow">Nfytech</span></span>
+                    <span class="block text-[10px] uppercase tracking-widest text-slate-400">Studio HASH iNf Lk</span>
+                </span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#softwares" class="hover:text-white transition">Softwares</a>
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#privacy" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#softwares"
+                    class="px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-glow hover:opacity-90 transition">Download</a>
+            </nav>
+
+            <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-edge" aria-label="Menu">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-edge bg-panel px-4 py-3 space-y-2 text-sm">
+            <a href="#softwares" class="block py-2">Softwares</a>
+            <a href="#about" class="block py-2">About</a>
+            <a href="#privacy" class="block py-2">Privacy Policy</a>
+        </div>
+    </header>
+
+    <!-- ===================== TOP BANNER AD ===================== -->
+    <div class="max-w-6xl mx-auto px-4 mt-4">
+        <div id="ad-top"
+            class="ad-slot border border-dashed border-edge rounded-xl min-h-[90px] flex items-center justify-center text-xs text-slate-500 text-center">
+            <!-- MONETAG TOP BANNER: paste your banner tag here (e.g. 728x90 / responsive) -->
+            Advertisement · Top Banner Slot (728×90 / Responsive)
+        </div>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="bg-grid">
+        <div class="max-w-6xl mx-auto px-4 py-20 md:py-28 text-center">
+            <span
+                class="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full border border-edge bg-panel text-indigo-300">
+                Code · Build · Innovate · Together
+            </span>
+            <h1 class="mt-6 text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                Powerful Software.<br><span class="text-glow">Fast, Easy Downloads.</span>
+            </h1>
+            <p class="mt-5 max-w-2xl mx-auto text-slate-400 md:text-lg">
+                Welcome to <b class="text-white">iNfytech</b> by Studio HASH iNf Lk — handcrafted tools for developers,
+                creators and everyday users. Pick a tool below and start downloading in seconds.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+                <a href="#softwares"
+                    class="px-7 py-3 rounded-xl font-semibold text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 shadow-glow hover:scale-[1.03] transition">Browse
+                    Softwares ↓</a>
+                <a href="#about"
+                    class="px-7 py-3 rounded-xl font-semibold border border-edge bg-panel hover:border-purple-500 transition">About
+                    Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SOFTWARE GRID ===================== -->
+    <section id="softwares" class="max-w-6xl mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">Featured <span class="text-glow">Softwares</span></h2>
+            <p class="mt-3 text-slate-400">Clean, lightweight and regularly updated.</p>
+        </div>
+        <div id="softwareGrid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+
+        <p class="mt-8 text-center text-xs text-slate-500 max-w-2xl mx-auto">
+            Ad notice: pressing a Download button opens a sponsored page in a new tab. Ads help support our development.
+            Your download starts automatically in this tab about 1 second later.
+        </p>
+    </section>
+
+    <!-- ===================== BOTTOM BANNER AD ===================== -->
+    <div class="max-w-6xl mx-auto px-4 mb-8">
+        <div id="ad-bottom"
+            class="ad-slot border border-dashed border-edge rounded-xl min-h-[250px] flex items-center justify-center text-xs text-slate-500 text-center">
+            <!-- MONETAG BOTTOM BANNER: paste your banner tag here (e.g. 300x250 / 728x90) -->
+            Advertisement · Bottom Banner Slot (300×250 / 728×90)
+        </div>
+    </div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="border-y border-edge bg-panel/60">
+        <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-white">About <span class="text-glow">Us</span></h2>
+                <p class="mt-4 leading-relaxed">
+                    <b class="text-white">Studio HASH iNf Lk</b> is a Sri Lankan technology studio focused on building
+                    practical, modern software and digital products.
+                    Our mission is simple: <i>Code · Build · Innovate · Together.</i>
+                </p>
+                <p class="mt-3 leading-relaxed">
+                    <b class="text-white">iNfytech</b> is our software and tools sub-brand. Every application released
+                    under iNfytech is designed to be fast, lightweight and easy to use. Selected tools are available as
+                    ad-supported downloads, while other tools are offered as one-time purchases, so we can keep
+                    building.
+                </p>
+                <div class="mt-6 grid grid-cols-3 gap-4 text-center">
+                    <div class="rounded-xl border border-edge p-4">
+                        <div class="text-2xl font-extrabold text-white">3+</div>
+                        <div class="text-xs text-slate-400">Tools</div>
+                    </div>
+                    <div class="rounded-xl border border-edge p-4">
+                        <div class="text-2xl font-extrabold text-white">24/7</div>
+                        <div class="text-xs text-slate-400">Downloads</div>
+                    </div>
+                    <div class="rounded-xl border border-edge p-4">
+                        <div class="text-2xl font-extrabold text-white">LK</div>
+                        <div class="text-xs text-slate-400">Made in Sri Lanka</div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2xl border border-edge bg-ink p-8 shadow-glow text-center">
+                <svg class="mx-auto" width="120" height="120" viewBox="0 0 48 48" fill="none">
+                    <rect x="6" y="6" width="36" height="36" rx="9" stroke="#a78bfa" stroke-width="2" fill="#1a1450" />
+                    <path d="M19 13 L16 35 M30 13 L27 35 M12 20 H36 M11 29 H35" stroke="#fff" stroke-width="2.6"
+                        stroke-linecap="round" />
+                </svg>
+                <div class="mt-4 text-xl font-extrabold text-white italic">HASH iNfytech LK</div>
+                <div class="text-sm text-slate-400 mt-1">Code · Build · Innovate · Together</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PRIVACY POLICY ===================== -->
+    <section id="privacy" class="max-w-4xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-white text-center">Privacy <span class="text-glow">Policy</span></h2>
+        <p class="text-center text-xs text-slate-500 mt-2">Last updated: October 2026</p>
+        <div class="mt-8 space-y-5 text-sm leading-relaxed">
+            <p><b class="text-white">Information we collect.</b> We do not require registration and do not knowingly
+                collect personal information such as names or email addresses. Standard technical data (IP address,
+                browser type, device, pages visited) may be processed automatically by our hosting provider and by
+                third-party advertising partners.</p>
+            <p><b class="text-white">Advertising.</b> This website displays advertisements served by third-party
+                networks, including <b>Monetag</b>. These networks may use cookies, local storage and similar
+                technologies to show relevant ads, limit repetition and measure performance. You can control cookies
+                through your browser settings or opt out of personalised advertising through your device or the ad
+                network's opt-out tools.</p>
+            <p><b class="text-white">Cookies.</b> Cookies are small files stored on your device. We and our advertising
+                partners may use them to remember preferences and deliver ads. Disabling cookies may affect how some
+                parts of the site work.</p>
+            <p><b class="text-white">Third-party links.</b> Clicking a download button may open a sponsored third-party
+                page in a new tab. We are not responsible for the content or privacy practices of external websites.</p>
+            <p><b class="text-white">Children.</b> This website is not directed to children under 13, and we do not
+                knowingly collect data from them.</p>
+            <p><b class="text-white">Your rights.</b> Depending on where you live, you may have the right to request
+                access to, correction of, or deletion of data held about you. Contact us using the details below.</p>
+            <p><b class="text-white">Contact.</b> Studio HASH iNf Lk · <a class="text-indigo-400 underline"
+                    href="mailto:contact@example.com">contact@example.com</a> <span class="text-slate-500">(replace with
+                    your real email)</span></p>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="border-t border-edge bg-panel/70">
+        <div class="max-w-6xl mx-auto px-4 py-10">
+            <div class="flex flex-col md:flex-row md:justify-between gap-6">
+                <div>
+                    <div class="font-extrabold text-white text-lg">i<span class="text-glow">Nfytech</span></div>
+                    <div class="text-xs text-slate-400">A brand of Studio HASH iNf Lk</div>
+                </div>
+                <div class="flex gap-6 text-sm">
+                    <a href="#softwares" class="hover:text-white">Softwares</a>
+                    <a href="#about" class="hover:text-white">About</a>
+                    <a href="#privacy" class="hover:text-white">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="mt-8 text-xs text-slate-500 leading-relaxed space-y-2">
+                <p><b class="text-slate-400">Disclaimer:</b> All software is provided "as is", without warranty of any
+                    kind, express or implied. Use at your own risk. Studio HASH iNf Lk and iNfytech are not liable for
+                    any damage, data loss or other issues arising from the use of the software or this website. Always
+                    scan downloaded files with up-to-date security software.</p>
+                <p><b class="text-slate-400">Advertising disclosure:</b> This website is supported by advertising
+                    (Monetag). Ads are served by third parties; we do not control and are not responsible for their
+                    content. Clicking an ad or a download button may open a sponsored page.</p>
+                <p><b class="text-slate-400">Trademarks:</b> All product names, logos and brands mentioned are property
+                    of their respective owners. Names and OS names are used for identification only.</p>
+            </div>
+            <div class="mt-6 pt-6 border-t border-edge text-xs text-slate-500 text-center">
+                © <span id="year"></span> Studio HASH iNf Lk · iNfytech. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== IN-PAGE PUSH / FLOATING AD SLOT ===================== -->
+    <div id="ad-inpage" class="fixed bottom-4 right-4 z-40 hidden md:block">
+        <!-- MONETAG IN-PAGE PUSH: usually injected automatically by your Monetag script.
+         If you use a manual banner tag instead, paste it inside this container. -->
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="fixed left-1/2 -translate-x-1/2 bottom-6 z-50 opacity-0 translate-y-4 pointer-events-none
+       px-5 py-3 rounded-xl bg-panel border border-purple-500/50 shadow-glow text-sm text-white"></div>
+
+    <!-- ===================== SCRIPT ===================== -->
+    <script>
+        /* =========================================================
+           CONFIGURATION – edit this section only
+           ========================================================= */
+        const MONETAG_SMARTLINK = "https://YOUR-MONETAG-SMARTLINK-URL";   // <-- paste your Monetag Direct/Smart Link
+        const DOWNLOAD_DELAY_MS = 1000;                                   // delay before the file download starts
+
+        const SOFTWARES = [
+            {
+                id: "gradia-sl",
+                icon: "📊",
+                title: "Gradia SL",
+                version: "v1.1.0",
+                desc: "A school grading and marks management system featuring offline mode, auto-sync, and Tailscale VPN support.",
+                features: [
+                    "Offline marks entry & local queue",
+                    "Automatic background data synchronization",
+                    "Tailscale & LAN network discovery",
+                    "Smart conflict resolution dialog"
+                ],
+                size: "45 MB",
+                os: "Windows 10 / 11 (64-bit)",
+                file: "downloads/Gradia-SL-1.1.0.zip",
+                color: "from-blue-500 to-indigo-600"
+            },
+            {
+                id: "gradia-sl-android",
+                icon: "📱",
+                title: "Gradia SL Mobile",
+                version: "v1.1.0",
+                desc: "Mobile companion app for Gradia SL enabling teachers to manage marks on-the-go with offline support.",
+                features: [
+                    "Teacher login via Tailscale or LAN",
+                    "Mobile-friendly marks entry interface",
+                    "Local offline caching & sync status",
+                    "Sinhala text rendering support"
+                ],
+                size: "18 MB",
+                os: "Android 8.0 or higher",
+                file: "downloads/Gradia-SL-Mobile-1.1.0.apk",
+                color: "from-blue-500 to-green-600"
+            },
+            {
+                id: "infy-pdf",
+                icon: "📄",
+                title: "iNfy PDF Toolkit",
+                version: "v2.0.1",
+                desc: "Merge, split and compress PDF files offline in seconds.",
+                features: ["Merge & split PDFs", "Compression engine", "Drag & drop UI", "100% offline"],
+                size: "28 MB",
+                os: "Windows 7 / 8 / 10 / 11",
+                file: "downloads/iNfy-PDF-Toolkit-2.0.1.zip",
+                color: "from-indigo-500 to-purple-600"
+            },
+            {
+                id: "infy-media",
+                icon: "🎬",
+                title: "iNfy Media Converter",
+                version: "v0.9.5 Beta",
+                desc: "Convert audio and video into popular formats with ease.",
+                features: ["MP4, MP3, MKV, WEBM", "Batch conversion", "Preset profiles", "Hardware acceleration"],
+                size: "96 MB",
+                os: "Windows 10 / 11 · Android 9+",
+                file: "downloads/iNfy-Media-Converter-0.9.5.zip",
+                color: "from-purple-500 to-fuchsia-600"
+            }
+        ];
+
+        /* =========================================================
+           RENDER SOFTWARE CARDS
+           ========================================================= */
+        const grid = document.getElementById("softwareGrid");
+        grid.innerHTML = SOFTWARES.map(s => `
+      <article class="card rounded-2xl border border-edge bg-panel p-6 hover:border-purple-500/60 hover:shadow-glow flex flex-col">
+        <div class="flex items-start justify-between">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br ${s.color} flex items-center justify-center text-2xl shadow-glowb">${s.icon}</div>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">${s.version}</span>
+        </div>
+        <h3 class="mt-5 text-xl font-bold text-white">${s.title}</h3>
+        <p class="mt-1 text-sm text-slate-400">${s.desc}</p>
+        <ul class="mt-4 space-y-1.5 text-sm">
+          ${s.features.map(f => `<li class="flex gap-2"><span class="text-purple-400">✔</span>${f}</li>`).join("")}
+        </ul>
+        <dl class="mt-5 grid grid-cols-2 gap-3 text-xs border-t border-edge pt-4">
+          <div><dt class="text-slate-500">File size</dt><dd class="text-slate-200 font-semibold">${s.size}</dd></div>
+          <div><dt class="text-slate-500">Requirement</dt><dd class="text-slate-200 font-semibold">${s.os}</dd></div>
+        </dl>
+        <button onclick="startDownload('${s.id}')"
+          class="mt-6 w-full py-3 rounded-xl font-semibold text-white bg-gradient-to-r ${s.color} shadow-glow hover:opacity-90 active:scale-[.98] transition">
+          ⬇ Download Now
+        </button>
+      </article>
+    `).join("");
+
+        /* =========================================================
+           DOWNLOAD + MONETAG SMARTLINK LOGIC
+           1) Opens the Monetag SmartLink in a NEW tab (inside the click handler,
+              so popup blockers allow it)
+           2) After 1 second, starts the file download in the current tab
+           ========================================================= */
+        function startDownload(id) {
+            const sw = SOFTWARES.find(s => s.id === id);
+            if (!sw) return;
+
+            // Step 1 – ad revenue tab (must run synchronously on click)
+            if (MONETAG_SMARTLINK && !MONETAG_SMARTLINK.includes("YOUR-MONETAG")) {
+                window.open(MONETAG_SMARTLINK, "_blank", "noopener");
+            }
+
+            showToast(`Preparing ${sw.title}… your download starts in 1 second`);
+
+            // Step 2 – direct file download after delay
+            setTimeout(() => {
+                const a = document.createElement("a");
+                a.href = sw.file;
+                a.download = sw.file.split("/").pop();
+                a.rel = "noopener";
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                showToast(`Download started: ${sw.title} ${sw.version}`);
+            }, DOWNLOAD_DELAY_MS);
+        }
+
+        /* Toast helper */
+        let toastTimer;
+        function showToast(msg) {
+            const t = document.getElementById("toast");
+            t.textContent = msg;
+            t.classList.remove("opacity-0", "translate-y-4");
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => t.classList.add("opacity-0", "translate-y-4"), 3500);
+        }
+
+        /* Mobile menu + footer year */
+        document.getElementById("menuBtn").addEventListener("click", () =>
+            document.getElementById("mobileMenu").classList.toggle("hidden"));
+        document.querySelectorAll("#mobileMenu a").forEach(a =>
+            a.addEventListener("click", () => document.getElementById("mobileMenu").classList.add("hidden")));
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
