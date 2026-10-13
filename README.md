@@ -1,2 +1,2 @@
-# infytech
+# iNfytech
 HASH iNf Downloading Platform
